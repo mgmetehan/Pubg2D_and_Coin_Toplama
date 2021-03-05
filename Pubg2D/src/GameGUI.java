@@ -129,7 +129,7 @@ public class GameGUI extends JFrame implements KeyListener, ActionListener {
 				lblCan.setText(String.valueOf(can));
 			}
 			if (can == 0) {
-				JOptionPane.showMessageDialog(this, "Öldünüz!!", "Uyarı", JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(this, "Oldunuz!!", "Uyari", JOptionPane.ERROR_MESSAGE);
 				lblCan.setText(String.valueOf(can));
 				System.exit(0);
 			}
