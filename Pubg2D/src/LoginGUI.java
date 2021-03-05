@@ -64,14 +64,14 @@ public class LoginGUI extends JFrame {
 		panel.add(gradientPanel);
 		gradientPanel.setLayout(null);
 
-		JLabel lblNewLabel = new JLabel("Kullan\u0131c\u0131 Ad\u0131");
+		JLabel lblNewLabel = new JLabel("Kullanici Adi");
 		lblNewLabel.setForeground(Color.WHITE);
 		lblNewLabel.setBackground(Color.WHITE);
 		lblNewLabel.setFont(new Font("Yu Gothic Medium", Font.PLAIN, 16));
 		lblNewLabel.setBounds(48, 122, 111, 35);
 		gradientPanel.add(lblNewLabel);
 
-		JLabel lblifre = new JLabel("\u015Eifre");
+		JLabel lblifre = new JLabel("Sifre");
 		lblifre.setForeground(Color.WHITE);
 		lblifre.setFont(new Font("Yu Gothic Medium", Font.PLAIN, 16));
 		lblifre.setBackground(Color.WHITE);
@@ -87,17 +87,17 @@ public class LoginGUI extends JFrame {
 		passwordField.setBounds(286, 193, 204, 35);
 		gradientPanel.add(passwordField);
 
-		btnGiris = new JButton("Giriþ Yap");
+		btnGiris = new JButton("Giris Yap");
 		btnGiris.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if (txtAd.getText().length() == 0 || passwordField.getText().length() == 0) {
-					JOptionPane.showMessageDialog(null, "Kullanýcý Bilgileri Eksik !!", "Uyarý",
+					JOptionPane.showMessageDialog(null, "Kullanici Bilgileri Eksik !!", "Uyari",
 							JOptionPane.WARNING_MESSAGE);
 				}
 				GameGUI game = new GameGUI();
 				JOptionPane.showMessageDialog(null,
-						"Kýrmýzý Noktayý Toplayarak Coin Kazan ve Can Satýn Al Veya Alanýn Ýçinde Kalmaya Çalýþ",
-						"Uyarý", JOptionPane.WARNING_MESSAGE);
+						"Kirmizi Noktayi Toplayarak Coin Kazan ve Can Satin Al Veya Alanin Icinde Kalmaya Calis",
+						"Uyari", JOptionPane.WARNING_MESSAGE);
 				game.setVisible(true);
 				dispose();
 
@@ -107,7 +107,7 @@ public class LoginGUI extends JFrame {
 		btnGiris.setBounds(48, 278, 442, 41);
 		gradientPanel.add(btnGiris);
 
-		lblHogeldiniz = new JLabel("Ho\u015Fgeldiniz");
+		lblHogeldiniz = new JLabel("Hosgeldiniz");
 		lblHogeldiniz.setForeground(Color.WHITE);
 		lblHogeldiniz.setFont(new Font("Yu Gothic Medium", Font.PLAIN, 16));
 		lblHogeldiniz.setBackground(Color.WHITE);
